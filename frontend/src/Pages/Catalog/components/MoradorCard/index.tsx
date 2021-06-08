@@ -7,7 +7,8 @@ type Props = {
 }
 
 const MoradorCard = ({ morador }: Props) => (
-    <div className="card-base border-radius-10 morador-card"> 
+    <div className="card-base border-radius-10 morador-card">
+        {morador.status} 
         <img src={morador.imgUrl} alt={morador.nome} className="morador-card-image"/>
         <div className="morador-card-info">
             <h6 className="morador-card-name">
