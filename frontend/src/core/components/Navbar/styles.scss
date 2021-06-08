@@ -1,0 +1,42 @@
+.navbar-main {
+    height: 70px;
+    color: white;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-logo-text {
+    color: #FFF;
+}
+
+.navbar-main-menu {
+    display: flex;
+    justify-content: center;
+
+    li:nth-child(2) {
+        margin-right: 85px;
+        margin-left: 85px;
+    }
+    
+    li:nth-child(3) {
+        margin-right: 85px;
+    } 
+}
+
+.navbar-link {
+    font-size: 18px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+
+    &.active {
+         font-weight: bold;
+        color: #FFF;
+    }
+
+    &:hover {
+        color: #FFF;
+    }
+}

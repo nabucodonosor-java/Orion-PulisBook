@@ -1,0 +1,88 @@
+.morador-details-container {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.morador-details {
+  padding: 50px 60px 90px 60px;
+}
+
+.morador-details-goback {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.morador-details-icon-goback {
+  color: #4076FF;
+  transform: rotate(-180deg);
+  margin-right: 30px;
+}
+
+.morador-details-text-goback {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+  color: #263238;
+  text-transform: uppercase;
+}
+
+.morador-details-card {
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  padding: 38px 29px;
+}
+
+.morador-details-image {
+  width: 343px;
+  height: 353px;
+}
+
+.morador-details-name {
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.015em;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.morador-details-curso {
+  font-size: 20px;
+  line-height: 49px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: #2d769a;
+}
+
+.morador-details-curso-title {
+  font-size: 30px;
+  line-height: 49px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: #2d769a;
+}
+
+.morador-details-info {
+  padding: 40px 20px 40px 20px;
+}
+
+.morador-details-info-title {
+  font-size: 22px;
+}
+
+.morador-details-descricao-title {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+  color: #263238;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.morador-details-descricao-text {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  color: #9E9E9E;
+}
