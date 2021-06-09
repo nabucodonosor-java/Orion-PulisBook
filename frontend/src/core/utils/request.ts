@@ -7,7 +7,9 @@ type LoginData = {
     password: string;
 }
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'https://pulis-book.herokuapp.com';
+// const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'https://pulis-book.herokuapp.com';
+
+const BASE_URL = 'https://pulis-book.herokuapp.com';
 
 axios.interceptors.response.use(function(response) {
     return response;

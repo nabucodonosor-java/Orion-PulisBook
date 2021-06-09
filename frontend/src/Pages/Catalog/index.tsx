@@ -8,7 +8,7 @@ import Pagination from 'core/components/Pagination';
 import MoradorFilters from 'core/components/MoradorFilters';
 import './styles.scss';
 
-const Catalog = () => { 
+const Catalog = () => {  
 
     const [moradorResponse, setMoradorResponse] = useState<MoradorResponse>();
     const [isLoading, setIsLoading] = useState(false);
@@ -55,10 +55,7 @@ const Catalog = () => {
  
     return (
         <div className="catalog-container">
-            <div className="d-flex justify-content-between">
-                <h1 className="catalog-title">
-                    Lista de Puleirianos
-                </h1>
+            <div className="filter-container">
                 <MoradorFilters
                     apelidoPrincipal={apelidoPrincipal}
                     casa={casa}

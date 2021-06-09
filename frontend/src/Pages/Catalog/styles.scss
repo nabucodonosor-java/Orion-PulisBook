@@ -5,10 +5,18 @@
     padding-bottom: 50px;
 }
 
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .catalog-title {
     font-size: 24px;
     line-height: 33px;
     letter-spacing: -0.015em;
+    margin-right: 10px;
 } 
 
 .catalog-moradores {
@@ -17,4 +25,20 @@
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 30px 30px;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catalog-title {
+        margin-bottom: 20px;
+    }
+
+    .catalog-moradores {
+        grid-template-columns: repeat(auto-fill, 220px);
+        grid-gap: 33px 10px;
+    }
 }

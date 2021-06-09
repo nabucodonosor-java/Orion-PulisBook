@@ -1,7 +1,6 @@
 .morador-details-container {
-    margin-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 40px 0px;
+    padding: 0px 40px;
 }
 
 .morador-details {
@@ -28,10 +27,17 @@
   text-transform: uppercase;
 }
 
+.morador-details-div-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .morador-details-card {
   border: 1px solid #E1E1E1;
   border-radius: 20px;
   padding: 38px 29px;
+  width: 100%;
 }
 
 .morador-details-image {
@@ -63,8 +69,13 @@
   color: #2d769a;
 }
 
-.morador-details-info {
+.morador-details-info-card {
   padding: 40px 20px 40px 20px;
+  width: 100%;
+}
+
+.morador-details-info-fields {
+  width: 100%;
 }
 
 .morador-details-info-title {
@@ -85,4 +96,35 @@
   line-height: 25px;
   letter-spacing: -0.015em;
   color: #9E9E9E;
+}
+
+@media (max-width: 768px) {
+
+  .morador-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .morador-details-div-info {
+    flex-direction: column;
+  }
+
+  .morador-details-info-card {
+    width: 530px;
+    margin: 0 auto;
+  }
+
+  .morador-details-info-fields {
+    border: 0px;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .morador-details-descricao-text {
+    
+  }
 }

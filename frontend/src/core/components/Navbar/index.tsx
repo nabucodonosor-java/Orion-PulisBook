@@ -18,22 +18,22 @@ const Navbar = () => {
     }, [location]); 
     
     return (
-        <nav className="row bg-primary navbar-main">
-            <div className="col-3">
+        <nav className="bg-primary navbar-main">
+           
                 <Link to="/" className="navbar-logo-text">
                     <h4>PulisBook</h4>
                 </Link>
-            </div>
-            <div className="col-6">
+           
+            <div className="navbar-menu-container"> 
                 <ul className="navbar-main-menu">
                     <li>
                         <NavLink className="navbar-link" to="/" activeClassName="active" exact>HOME</NavLink>
                     </li>
                     <li>
-                        <NavLink className="navbar-link" to="/moradores" activeClassName="active" exact>PULEIRIANOS</NavLink>
+                        <NavLink className="navbar-link" to="/moradores" activeClassName="active" exact>PULIS</NavLink>
                     </li>
                     <li>
-                        <NavLink className="navbar-link" to="/devs" activeClassName="active" exact>DevTeam</NavLink>
+                        <NavLink className="navbar-link" to="/devs" activeClassName="active" exact>Equipe</NavLink>
                     </li>
                     {isAllowebByRole(['ROLE_ADMIN']) && (
                         <li>
@@ -42,14 +42,14 @@ const Navbar = () => {
                     )}
                 </ul>
             </div>
-            <div className="col-3 text-right">
+            <div className="text-right">
                { currentUser && (
                    <>
                     <a href="logout" className="navbar-link active d-inline ml-3" onClick={handleLogout}>
                         LOGOUT
                     </a>
                     <div>  
-                        {currentUser}
+                        <h6 className="nav-link-email">{currentUser}</h6>
                     </div>                   
                    </>
                )}

@@ -3,12 +3,12 @@ import { Morador } from 'core/types/Morador';
 import './styles.scss';
 
 type Props = {
-    morador: Morador;
+    morador: Morador; 
 }
 
 const MoradorCard = ({ morador }: Props) => (
     <div className="card-base border-radius-10 morador-card">
-        {morador.status} 
+        <h1 className="morador-card-status">{morador.status}</h1>
         <img src={morador.imgUrl} alt={morador.nome} className="morador-card-image"/>
         <div className="morador-card-info">
             <h6 className="morador-card-name">

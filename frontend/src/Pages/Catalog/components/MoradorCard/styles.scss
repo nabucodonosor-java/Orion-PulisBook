@@ -2,6 +2,16 @@
     padding: 20px 20px 30px 20px;
     text-align: center;
 }
+
+.morador-card-status {
+    color: #2d769a;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
  
 .morador-card-image {
     width: 150px;
@@ -25,7 +35,7 @@
 
 .morador-card-curso {
     color: #2d769a;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.015em;
     font-weight: bold;
@@ -41,4 +51,10 @@
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .morador-card {
+        padding: 10px 10px 30px 10px;
+    }
 }
