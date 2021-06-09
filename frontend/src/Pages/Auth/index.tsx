@@ -6,7 +6,7 @@ import './styles.scss';
 import Login from './components/Login';
 
 
-const Auth = () => (
+const Auth = () => ( 
     <div className="auth-container">
         <div className="auth-info">
             <h1 className="auth-info-title">

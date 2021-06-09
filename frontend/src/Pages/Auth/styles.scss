@@ -2,7 +2,7 @@
     display: flex;
     padding: 40px 40px 100px 0;
     justify-content: center;
-    background: url(~core/assests/images/background-login.svg) no-repeat;
+    background: url(~core/assests/images/background-login.svg) no-repeat bottom;
     background-size: 100%;
 }
 
@@ -23,4 +23,10 @@
     letter-spacing: -0.015em;
     color: #9E9E9E;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .auth-info {
+        display: none;
+    }
 }

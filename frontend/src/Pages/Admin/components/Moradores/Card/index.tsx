@@ -9,19 +9,18 @@ type Props = {
     morador: Morador;
     onRemove: (moradorId: number) => void;
 }
-
+ 
 const Card = ({ morador, onRemove }: Props) => {
 
     return (
         <div className="card-base morador-card-admin">
-            <div className="row">
-                <div className="col-2 text-center border-right py-3">
+                <div className="text-center border-right py-3">
                     <img src={morador.imgUrl}
                     alt={morador.nome} className="morador-card-img-admin" />
                 </div>
                 <div className="col-7 py-3">
                     {morador.status}
-                    <h3 className="morador-card-name-admin mt-2 mb-2">
+                    <h3 className="card-content morador-card-name-admin mt-2 mb-2">
                         {morador.apelidoPrincipal}
                     </h3>
                     Ano Ingresso no Pulis: {morador.anoEntradaPulis}           
@@ -43,7 +42,6 @@ const Card = ({ morador, onRemove }: Props) => {
                     EXCLUIR
                     </button>
                 </div>
-            </div>
         </div>
     )
 }

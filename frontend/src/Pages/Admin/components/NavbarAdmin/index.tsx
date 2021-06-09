@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import './styles.scss';
 
 const NavbarAdmin = () => (
-    <nav className="admin-nav-admin-container">
+    <nav className="admin-nav-admin-container"> 
         <ul>
             <li>
                 <NavLink to="/admin/moradores" className="admin-nav-admin-item">
