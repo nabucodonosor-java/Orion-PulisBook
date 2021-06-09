@@ -123,8 +123,47 @@
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+@media (max-width: 576px) {
+
+  .morador-details-container {
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  .morador-details {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .morador-details-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .morador-details-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .morador-details-info-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .morador-details-info-card {
+    width: 100%;
+    margin-top: 10px;
+  }
 
   .morador-details-descricao-text {
-    
+    width: 90%;
   }
 }

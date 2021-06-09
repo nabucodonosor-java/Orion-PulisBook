@@ -32,7 +32,6 @@ const MoradorDetails = () => {
                 <h1 className="morador-details-text-goback">voltar</h1>
                 </Link>
                 <div className="morador-details-div-info">
-                    <div className="pr-5">
                         {isLoading ? <MoradorInfoLoader /> : (
                             <div className="morador-details-card">
                                 <div className="text-center">
@@ -46,7 +45,6 @@ const MoradorDetails = () => {
                                 </div>
                             </div>
                         )}   
-                    </div>
                     <div className="card-base border-radius-20 morador-details-info-card">
                         {isLoading ? <MoradorDescriptionLoader /> : (
                               <div className="morador-details-info-fields">
