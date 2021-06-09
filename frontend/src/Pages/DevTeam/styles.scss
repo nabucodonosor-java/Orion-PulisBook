@@ -20,10 +20,56 @@
 .equipe-descricao {
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.equipe-descricao-div {
+    display: flex;
+    
 }
 
 .img-dev {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+
+    .equipe-descricao {
+        display: inline;
+        justify-content: center;
+        margin-bottom: 20px;
+    } 
+}
+
+@media (max-width: 414px) {
+
+    .home-container {
+        margin-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .equipe-title-db {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        font-size: 10px;
+    }
+
+    .equipe-descricao {
+        display: inline;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .img-dev {
+        height: 50px;
+        width: 50px;
+    }
 }

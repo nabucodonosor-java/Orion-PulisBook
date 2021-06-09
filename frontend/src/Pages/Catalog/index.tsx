@@ -19,7 +19,7 @@ const Catalog = () => {
     const getMoradores = useCallback(() => {
         const params = {
             page: activePage,
-            linesPerPage: 8,
+            linesPerPage: 12,
             apelidoPrincipal,
             casaId: casa?.id
         }
