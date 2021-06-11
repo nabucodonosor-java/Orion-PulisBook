@@ -49,7 +49,7 @@ const MoradorDetails = () => {
                         {isLoading ? <MoradorDescriptionLoader /> : (
                               <div className="morador-details-info-fields">
                                 <div>
-                                    <h6 className="morador-details-info-title">{morador?.status}</h6>   
+                                    <h6 className="morador-details-info-title mb-4">{morador?.status}</h6>   
                                 </div>
                                 <div className="mb-2">
                                     <h6 className="morador-details-info-title">NOME</h6>
